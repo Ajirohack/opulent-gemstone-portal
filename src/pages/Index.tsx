@@ -11,7 +11,7 @@ const Index = () => {
   }, []);
 
   return (
-    <main>
+    <div className="min-h-screen">
       <HeroSection />
       
       {/* Featured Section */}
@@ -25,7 +25,7 @@ const Index = () => {
               Discover Exceptional Gemstones
             </h2>
             <p className="text-lg text-neutral-charcoal/80">
-              For over three decades, we have provided discreet procurement services for the world's most discerning collectors.
+              For over three decades, we have provided discreet procurement services for the world&apos;s most discerning collectors.
             </p>
           </div>
           
@@ -38,7 +38,7 @@ const Index = () => {
               },
               {
                 title: 'Rare Acquisitions',
-                description: 'Access to the world's most exclusive gemstones and historically significant jewelry pieces.',
+                description: 'Access to the world\'s most exclusive gemstones and historically significant jewelry pieces.',
                 image: 'https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
               },
               {
@@ -78,7 +78,7 @@ const Index = () => {
               Client Appreciation
             </span>
             <blockquote className="font-playfair text-2xl md:text-3xl italic mb-8">
-              "Their discretion and expertise in procuring rare gemstones is unmatched. Opulent Gemstone has been our trusted advisor for three generations."
+              &quot;Their discretion and expertise in procuring rare gemstones is unmatched. Opulent Gemstone has been our trusted advisor for three generations.&quot;
             </blockquote>
             <div className="flex flex-col items-center">
               <div className="w-16 h-0.5 bg-gold mb-4"></div>
@@ -106,7 +106,7 @@ const Index = () => {
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 };
 

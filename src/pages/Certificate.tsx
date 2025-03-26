@@ -9,7 +9,7 @@ const Certificate = () => {
   }, []);
 
   return (
-    <main className="pt-24">
+    <div className="pt-24 min-h-screen">
       {/* Hero Section */}
       <section className="page-section">
         <div className="premium-container">
@@ -101,7 +101,7 @@ const Certificate = () => {
               {
                 icon: <Shield size={32} className="text-gold" />,
                 title: 'Independent Verification',
-                description: 'We collaborate with world-renowned gemological laboratories to provide independent verification of each stone's authenticity and quality.'
+                description: 'We collaborate with world-renowned gemological laboratories to provide independent verification of each stone\'s authenticity and quality.'
               },
               {
                 icon: <Lock size={32} className="text-gold" />,
@@ -158,7 +158,7 @@ const Certificate = () => {
             ].map((testimonial, index) => (
               <div key={index} className="glass-card rounded-lg p-8">
                 <blockquote className="font-playfair text-lg italic mb-6">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </blockquote>
                 <div className="flex flex-col">
                   <span className="font-medium">{testimonial.author}</span>
@@ -184,7 +184,7 @@ const Certificate = () => {
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 };
 
